@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{url_for('static', filename = 'mycss.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script src="{{url_for('static', filename = 'tictac.js')}}"></script>
+	<script src="{{url_for('static', filename = 'RWDandSPA.js')}}"></script>	
+</head>
+<body>
+
+<div class="topnav " id="myTopnav">
+  <a id="showHome" style="width:180px;height:74px; padding:0px; margin-top:4px">LOGO <img src=""></a>
+  <a id="showGame" onclick="showPlayer()">Tic Tac Toe</a>
+  <a id="showPhotos">Photos</a>
+  <a id="showVote">Vote</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div id="home">
+	<div class="row">
+		<div class="col-4 col-s-12">
+			<div class="boxleft">
+				<p style='text-align:center';> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere facilisis magna vitae convallis. Cras euismod ornare leo at faucibus. Nulla dapibus laoreet nunc, vitae accumsan nisl porttitor quis. Vestibulum in nulla in justo mollis malesuada vitae eget neque. Nam facilisis cursus bibendum. Curabitur sit amet erat a turpis suscipit porta. Mauris sed mi mattis, molestie nisl id, luctus turpis. Cras nec eros augue. Nunc pharetra quis nisi vitae pellentesque. Etiam eget justo id neque laoreet pulvinar.
+
+			Etiam convallis diam at hendrerit facilisis. Mauris id viverra libero. Phasellus arcu quam, condimentum ac molestie vel, rutrum eget ex. In consectetur, quam ac sagittis euismod, ipsum mi volutpat felis, vitae porta est felis sit amet dui. Suspendisse id mauris eu tellus cursus interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, lectus ac luctus feugiat, purus ligula viverra diam, ac auctor neque leo in est. Sed eros nibh, bibendum vitae eleifend vel, iaculis sit amet nunc.
+
+			Donec eu viverra urna. Aenean in arcu rutrum nisl efficitur placerat in ac augue. Fusce rhoncus elit a erat congue, ut dignissim mauris efficitur. Fusce suscipit iaculis lobortis. Ut quis porttitor mi. Ut dui diam, luctus quis laoreet consequat, pretium maximus orci. Nullam aliquet nisl odio, ac laoreet sem aliquam quis. Donec hendrerit ante et efficitur rhoncus. Vivamus mollis ante vitae vestibulum maximus.
+
+			Quisque in purus at ligula interdum faucibus. Fusce non ultricies enim, ut lacinia massa. Nunc tempus condimentum sodales. Integer egestas nunc non purus consequat aliquet. Aliquam sit amet diam risus. Donec vel leo ut mauris molestie pellentesque. Donec ut lacus viverra ante rutrum venenatis.
+			 </p>
+			</div>
+		</div>
+		
+		<div class="col-4 col-s-12">
+			<div class="boxmid">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere facilisis magna vitae convallis. Cras euismod ornare leo at faucibus. Nulla dapibus laoreet nunc, vitae accumsan nisl porttitor quis. Vestibulum in nulla in justo mollis malesuada vitae eget neque. Nam facilisis cursus bibendum. Curabitur sit amet erat a turpis suscipit porta. Mauris sed mi mattis, molestie nisl id, luctus turpis. Cras nec eros augue. Nunc pharetra quis nisi vitae pellentesque. Etiam eget justo id neque laoreet pulvinar.
+
+			Etiam convallis diam at hendrerit facilisis. Mauris id viverra libero. Phasellus arcu quam, condimentum ac molestie vel, rutrum eget ex. In consectetur, quam ac sagittis euismod, ipsum mi volutpat felis, vitae porta est felis sit amet dui. Suspendisse id mauris eu tellus cursus interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, lectus ac luctus feugiat, purus ligula viverra diam, ac auctor neque leo in est. Sed eros nibh, bibendum vitae eleifend vel, iaculis sit amet nunc.
+
+			Donec eu viverra urna. Aenean in arcu rutrum nisl efficitur placerat in ac augue. Fusce rhoncus elit a erat congue, ut dignissim mauris efficitur. Fusce suscipit iaculis lobortis. Ut quis porttitor mi. Ut dui diam, luctus quis laoreet consequat, pretium maximus orci. Nullam aliquet nisl odio, ac laoreet sem aliquam quis. Donec hendrerit ante et efficitur rhoncus. Vivamus mollis ante vitae vestibulum maximus.
+
+			Quisque in purus at ligula interdum faucibus. Fusce non ultricies enim, ut lacinia massa. Nunc tempus condimentum sodales. Integer egestas nunc non purus consequat aliquet. Aliquam sit amet diam risus. Donec vel leo ut mauris molestie pellentesque. Donec ut lacus viverra ante rutrum venenatis.</p>
+				
+			</div>
+		</div>
+		
+		<div class="col-4 col-s-12">
+			<div class="boxright">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere facilisis magna vitae convallis. Cras euismod ornare leo at faucibus. Nulla dapibus laoreet nunc, vitae accumsan nisl porttitor quis. Vestibulum in nulla in justo mollis malesuada vitae eget neque. Nam facilisis cursus bibendum. Curabitur sit amet erat a turpis suscipit porta. Mauris sed mi mattis, molestie nisl id, luctus turpis. Cras nec eros augue. Nunc pharetra quis nisi vitae pellentesque. Etiam eget justo id neque laoreet pulvinar.
+
+			Etiam convallis diam at hendrerit facilisis. Mauris id viverra libero. Phasellus arcu quam, condimentum ac molestie vel, rutrum eget ex. In consectetur, quam ac sagittis euismod, ipsum mi volutpat felis, vitae porta est felis sit amet dui. Suspendisse id mauris eu tellus cursus interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, lectus ac luctus feugiat, purus ligula viverra diam, ac auctor neque leo in est. Sed eros nibh, bibendum vitae eleifend vel, iaculis sit amet nunc.
+
+			Donec eu viverra urna. Aenean in arcu rutrum nisl efficitur placerat in ac augue. Fusce rhoncus elit a erat congue, ut dignissim mauris efficitur. Fusce suscipit iaculis lobortis. Ut quis porttitor mi. Ut dui diam, luctus quis laoreet consequat, pretium maximus orci. Nullam aliquet nisl odio, ac laoreet sem aliquam quis. Donec hendrerit ante et efficitur rhoncus. Vivamus mollis ante vitae vestibulum maximus.
+
+			Quisque in purus at ligula interdum faucibus. Fusce non ultricies enim, ut lacinia massa. Nunc tempus condimentum sodales. Integer egestas nunc non purus consequat aliquet. Aliquam sit amet diam risus. Donec vel leo ut mauris molestie pellentesque. Donec ut lacus viverra ante rutrum venenatis.
+			</p>			
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-3 col-s-6">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2021/09/21/09/34/background-6642882_960_720.png">
+			</div>
+		</div>
+		<div class="col-3 col-s-6">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2020/11/09/01/46/leaves-5725356_960_720.png">
+			</div>
+		</div>
+		<div class="col-3 col-s-6">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2020/10/23/17/52/fox-5679446_960_720.png" >
+			</div>
+		</div>
+		<div class="col-3 col-s-6">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2019/12/14/07/21/mountain-4694346_960_720.png">
+			</div>
+		</div>
+	</div>
+</div>
+<div id="tictactoe">
+	<div class="center">
+		<h1>Tic Tac Toe</h1>
+	</div>
+	<table  style="margin:auto">
+		
+			<tr>
+				<td id="00" onclick="change(id)"></td>
+				<td id="10" onclick="change(id)"></td>
+				<td id="20" onclick="change(id)"></td>
+			</tr>
+			<tr>
+				<td id="01" onclick="change(id)"></td>
+				<td id="11" onclick="change(id)"></td>
+				<td id="21" onclick="change(id)"></td>
+			</tr>
+			<tr>
+				<td id="02" onclick="change(id)"></td>
+				<td id="12" onclick="change(id)"></td>
+				<td id="22" onclick="change(id)"></td>
+			</tr>
+		
+	</table>
+	<div class="center">
+		<p id="player"></p>
+		<div style="min-height: 50px">
+			<p id ="winner"></p>
+		</div>	
+		<button onclick="setDefault()">Play again</button>
+	</div>
+</div>
+<div id="photos">
+	<div class="row">
+		<div class="col-6 col-s-12">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2021/09/21/09/34/background-6642882_960_720.png">
+			</div>
+		</div>
+		<div class="col-6 col-s-12">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2020/11/09/01/46/leaves-5725356_960_720.png">
+			</div>
+		</div>
+		<div class="col-6 col-s-12">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2020/10/23/17/52/fox-5679446_960_720.png" >
+			</div>
+		</div>
+		<div class="col-6 col-s-12">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2019/12/14/07/21/mountain-4694346_960_720.png">
+			</div>
+		</div>
+	</div>	
+</div>
+<div id="vote">
+	<div class="row">
+		<div class="center">
+			<div style="margin-top:15px">
+			Votes: <span id="count">{{ votes }}</span>
+				<br><br>
+				<button style="color:#ffaa00; background-color: black;"id="up">UP</button>
+				<br><br>
+				<button style="color:#ffaa00; background-color: black;" id="down">DOWN</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="container">				
+		<div class="footer">
+			<p>Pepe Inc. 2022</p>
+			<p>Tel. 123456789</p>
+		</div>
+	</div>
+</body>
+</html>
