@@ -21,3 +21,6 @@ def downvote():
     if votes >= 1:
         votes = votes - 1
     return str(votes)
+
+if __name__ = '__main__':
+    app.run()
